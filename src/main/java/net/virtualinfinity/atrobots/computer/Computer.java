@@ -13,7 +13,7 @@ import java.util.Map;
  *
  * @author Daniel Pitts
  */
-public class Computer implements PortListener, Restartable {
+public class Computer extends PortHandler implements PortListener, Restartable {
     private Memory memory;
     private Registers registers;
     private StackMemory stack;
