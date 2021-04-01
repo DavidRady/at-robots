@@ -33,7 +33,7 @@ public class Computer extends PortHandler implements PortListener, Restartable {
     private DebugListener debugListener = new EmptyDebugListener();
     private int id;
     private String name;
-    private final DebugInfo debugInfo;
+    private DebugInfo debugInfo;
 
     public Computer(Memory memory, int stackSize, int maxProcessorSpeed, DebugInfo debugInfo) {
         this.memory = memory;
